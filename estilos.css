@@ -1,0 +1,114 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem;
+    background-color: #c4c4d0;
+}
+
+header img {
+    width: 15%;
+}
+
+header h1 {
+    font-family:"Rochester", cursive;
+    font-size: 400%;
+    margin-bottom: 0;
+}
+
+.p {
+    font-family: "Bad Script", cursive;
+    font-size: 150%;
+    margin-top: 0;
+
+}
+
+
+
+body {
+    margin: 0;
+}
+
+nav {
+    padding: 10px;
+    margin: 0px 250px;
+    background-color: #d4d4f0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: inline;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+    transition: 1s;
+    border-radius: 5%;
+    padding: 0.5rem;
+    
+}
+
+.menu:hover {
+    transform: scale(1.3);
+    box-shadow: 2px 2px 2px #bbb;
+    z-index: 2;
+
+}
+
+.menu img {
+    margin: 3%;
+    width: 120px;
+}
+
+.menu a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.bienvenida1{
+    display: flex;
+    padding: 2rem;
+    margin: 20px 150px;
+    align-items: center;
+    background-color: #c4c4d0;
+}
+bienvenida1 h2 {
+    text-align: left;
+}
+
+.texto {
+    font-family: "Alex Brush", cursive;
+    font-size: 300%;
+    text-align: center;
+    font-weight: 400;
+}
+
+main section {
+    margin: 2% 7%;
+}
+
+section div {
+    background-color: #c4c4d0;
+    padding: 1rem;
+    margin: 2%;
+    border-radius: 2%;
+}
+
+
+footer {
+    display: flex;
+    background-color: #c4c4d0;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family:"Rochester", cursive;
+    font-size: 170%;
+}
