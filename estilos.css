@@ -24,8 +24,6 @@ header h1 {
 
 }
 
-
-
 body {
     margin: 0;
 }
@@ -40,10 +38,11 @@ nav {
 
 .menu {
     display: inline;
+    justify-content: center;
     background-color: white;
-    width: 150px;
-    height: 150px;
-    margin: 0px 10px;
+    width: 170px;
+    height: 170px;
+    margin: 0px 8px;
     transition: 1s;
     border-radius: 5%;
     padding: 0.5rem;
@@ -59,13 +58,21 @@ nav {
 
 .menu img {
     margin: 3%;
-    width: 120px;
+    width: 125px;
+    height: 75%;
+    transition: transform 0.3s ease;
+    backface-visibility: hidden;
+
 }
 
 .menu a {
     display: flex;
     justify-content: center;
+    background-color: #d4d4f0;
     text-decoration: none;
+    padding: 0.4rem;
+    border-radius: 4%;
+
 }
 
 .menu a:hover {
@@ -91,15 +98,147 @@ bienvenida1 h2 {
     font-weight: 400;
 }
 
-main section {
-    margin: 2% 7%;
+
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4c4d0;
+    padding: 2rem;
+    margin: 8%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    gap: 2%;
+    border-radius: 2%;
 }
 
-section div {
+.slide {
+    width: 1280px;
+    height: 300px;
+    margin: 50px 10px;
+    overflow: hidden;
+}
+
+.slide ul {
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: slide 20s infinite ease-in-out;
+}
+
+.slide li {
+    width: 100%;
+    list-style: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    
+
+}
+
+@keyframes slide {
+    0% {margin-left: 0; }
+    40% {margin-left: 0; }
+
+    50%  { margin-left: -100%; }       
+    90%  { margin-left: -100%; }   
+
+    100% { margin-left: 0; }
+}
+
+
+.contenedor1 h2 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.contenedor1 p {
+    text-align: left;
+} 
+
+.contenedor1 img {
+    width: 200px;
+}
+
+.texto2 {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 0.3rem;
+    margin: 1% 0;
+
+
+}
+ 
+.enlace {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    padding: 0.5rem;
+    margin: 0% 40%;
+    border: 2px solid red;
+}
+
+.enlace:hover {
+    
+
+}
+
+main h3{
+    display: flex;
+    justify-content: center;
+    margin: 2% 10%;
     background-color: #c4c4d0;
-    padding: 1rem;
-    margin: 2%;
-    border-radius: 2%;
+    padding: 0.5rem;
+}
+
+
+form {
+    margin: 5%;
+}
+
+.textos * {
+    box-sizing: border-box;
+}
+
+.textos input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid red;
+    border-radius: 4px;
+    resize: vertical;
+    
+}
+
+
+
+form label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.enviar input {
+    background-color: antiquewhite;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 2%;
+}
+
+.enviar input:hover {
+    background-color: aqua;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #d4d4f0;
+    padding: 20px;
 }
 
 
