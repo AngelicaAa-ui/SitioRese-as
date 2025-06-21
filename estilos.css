@@ -4,41 +4,62 @@ header {
     align-items: center;
     gap: 15px;
     padding: 1rem;
-    background-color: #c4c4d0;
+    background-color: #333333;
+    color: white;
 }
+
 
 header img {
     width: 15%;
+    border-radius: 50%;
 }
 
 header h1 {
-    font-family:"Rochester", cursive;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     font-size: 400%;
     margin-bottom: 0;
 }
 
+.tituloTipo2 h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 400%;
+    margin-bottom: 11%;
+}
+
 .p {
-    font-family: "Bad Script", cursive;
-    font-size: 150%;
+    font-family: "Allura", cursive;
+    font-weight: 500;
+    font-size: 200%;
     margin-top: 0;
+    text-align: center;
+    letter-spacing: 2px;
 
 }
 
 body {
     margin: 0;
+    background-color: #F5F0E6;
 }
 
 nav {
     padding: 10px;
     margin: 0px 250px;
-    background-color: #d4d4f0;
+    background-color: #333333;
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1px;
+    box-shadow: 0 0 10px #bbb;
 }
 
 .menu {
-    display: inline;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     width: 170px;
     height: 170px;
@@ -51,7 +72,7 @@ nav {
 
 .menu:hover {
     transform: scale(1.3);
-    box-shadow: 2px 2px 2px #bbb;
+    box-shadow: 0 0 10px #bbb;
     z-index: 2;
 
 }
@@ -66,36 +87,154 @@ nav {
 }
 
 .menu a {
+    padding: 1px;
     display: flex;
     justify-content: center;
-    background-color: #d4d4f0;
+    align-items: center;
+    background-color: #53060C;
     text-decoration: none;
-    padding: 0.4rem;
-    border-radius: 4%;
+    padding: 0.2rem;
+    border-radius: 4px;
+    width: 95%;
+    height: 25%;
+    font-family: "Allura", cursive;
+    font-weight: 500;
+    font-size: 140%;
+    color: white;
+    letter-spacing: 2px;
 
 }
 
 .menu a:hover {
-    color: red;
+    background-color: white;
+    border: 2px solid #333333;
+    color: #53060C;
     text-decoration: underline;
+
 }
 
 .bienvenida1{
     display: flex;
-    padding: 2rem;
-    margin: 20px 150px;
+    margin: 20px 250px;
     align-items: center;
-    background-color: #c4c4d0;
+    background-color: #6D1A1A;
+    border: 3px solid #B89B7B;
+    box-shadow: 0 0 10px #bbb;
 }
-bienvenida1 h2 {
-    text-align: left;
+.tituloB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 4%;
+    padding: 0.5rem;
+}
+
+.tituloB h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 120%;
+    color: #F5F5DC; 
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+
+.tituloB h3 {
+    font-family: "Allura", cursive;
+    font-weight: 500;
+    font-size: 120%;
+    color: #FAFAFA;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.2px;
+}
+
+.tituloB img {
+    width: 120px;
+}
+
+.bienvenida1 p {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    padding: 0.5rem;
+    margin-left: 3%;
+    margin-right: 4%;
+    text-align: center;
+    font-size: 90%;
+    color: #FAFAFA;
+}
+
+.textoM {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 150%;
+    text-align: center;
+    padding: 0;
+    color: #6D1A1A;
 }
 
 .texto {
     font-family: "Alex Brush", cursive;
     font-size: 300%;
     text-align: center;
-    font-weight: 400;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        margin: 0px auto;
+        justify-content: center;
+        
+        max-width: 40%;
+        padding: 1rem;
+
+
+    }
+
+    .menu {
+        width: 85%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    .bienvenida1 {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .bienvenida1 h2 {
+        text-align: center;
+        
+    }
+
+    .texto {
+        font-size: 200%;
+    }
+}
+
+.animación {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    padding: 1rem;
 }
 
 
@@ -103,64 +242,101 @@ bienvenida1 h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c4c4d0;
-    padding: 2rem;
-    margin: 8%;
+    background-color: #6D1A1A;
+    margin: 7%;
     margin-bottom: 2%;
-    margin-top: 2%;
-    gap: 2%;
-    border-radius: 2%;
+    margin-top: 0;
+    border-radius: 8px;
+    border: 3px solid #B89B7B;
+    box-shadow: 0 0 10px #8d8d8d;
 }
 
 .slide {
-    width: 1280px;
-    height: 300px;
-    margin: 50px 10px;
+    width: 1780px;
+    height: auto;
+    margin: 30px;
+    
     overflow: hidden;
+    border: 2px solid white;
+    
 }
 
 .slide ul {
     display: flex;
     padding: 0;
-    width: 200%;
-    animation: slide 20s infinite ease-in-out;
+    width: 500%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 0;
+    animation: slide 20s infinite alternate ease-in-out;
+    line-height: 0;
+    
 }
 
 .slide li {
     width: 100%;
     list-style: none;
+    
+    
 }
 
 .slide img {
     width: 100%;
-    height: 300px;
+    
+    
+    
     
 
 }
 
 @keyframes slide {
-    0% {margin-left: 0; }
-    40% {margin-left: 0; }
+    0% { margin-left: 0; } 
+    16% { margin-left: 0; } 
 
-    50%  { margin-left: -100%; }       
-    90%  { margin-left: -100%; }   
+    20% { margin-left: -100%; } 
+    36% { margin-left: -100%; } 
 
-    100% { margin-left: 0; }
+    40% { margin-left: -200%; } 
+    56% { margin-left: -200%; } 
+
+    60% { margin-left: -300%; } 
+    76% { margin-left: -300%; } 
+
+    80% { margin-left: -400%; } 
+    100% { margin-left: -400%; }
 }
 
 
 .contenedor1 h2 {
-    display: flex;
-    justify-content: center;
-    text-align: left;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 1%;
+    color: white;
+    
 }
 
 .contenedor1 p {
-    text-align: left;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-size: 80%;
+    color: white;
+    text-align: justify;
+    margin-right: 50px;
+    
+    
 } 
 
+
+.espacio {
+    margin-bottom: 3%;
+    
+}
+
 .contenedor1 img {
-    width: 200px;
+    width: 100%;
 }
 
 .texto2 {
@@ -244,10 +420,12 @@ form {
 
 footer {
     display: flex;
-    background-color: #c4c4d0;
+    background-color: #53060C;
     height: 50px;
     align-items: center;
     justify-content: center;
-    font-family:"Rochester", cursive;
-    font-size: 170%;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-size: 140%;
+    color: white;
 }
